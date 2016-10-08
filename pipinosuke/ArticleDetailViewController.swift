@@ -16,6 +16,7 @@ class ArticleDetailViewController: UIViewController {
     var article: Article?
     
 
+
     @IBOutlet weak var text: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,25 @@ class ArticleDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
+    @IBAction func buttonTapped(sender: UIButton) {
+        let alertController = UIAlertController(
+            title:"Liked!!",
+            message: "",
+            preferredStyle:UIAlertControllerStyle.Alert)
+        
+        alertController.addAction(
+            UIAlertAction(
+                title:"OK",
+                style:UIAlertActionStyle.Default,
+                handler:nil))
+        
+        presentViewController(
+            alertController,
+            animated:true,
+            completion:nil)
+    }
+
     
 
     override func didReceiveMemoryWarning() {

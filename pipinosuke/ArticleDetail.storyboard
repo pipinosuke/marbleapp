@@ -27,9 +27,17 @@
                                     <outlet property="delegate" destination="Quc-No-X2w" id="0OP-gl-dYr"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvJ-xl-6c4">
+                                <rect key="frame" x="277" y="401" width="30" height="30"/>
+                                <state key="normal" title="Like"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Quc-No-X2w" eventType="touchUpInside" id="6Lw-I8-Zg5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qf3-nt-YXb"/>
                     <connections>
                         <outlet property="text" destination="1qU-6t-nw5" id="u7R-hh-AwZ"/>
                     </connections>

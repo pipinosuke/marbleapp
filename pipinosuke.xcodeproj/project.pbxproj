@@ -14,6 +14,11 @@
 		54AB62541DA90457002F945C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AB62521DA90457002F945C /* LaunchScreen.storyboard */; };
 		54AB625F1DA90457002F945C /* pipinosukeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB625E1DA90457002F945C /* pipinosukeTests.swift */; };
 		54AB626A1DA90457002F945C /* pipinosukeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62691DA90457002F945C /* pipinosukeUITests.swift */; };
+		54AB62921DA90B31002F945C /* ArticleDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AB62911DA90B31002F945C /* ArticleDetail.storyboard */; };
+		54AB62941DA90C1E002F945C /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62931DA90C1E002F945C /* ArticleViewController.swift */; };
+		54AB62961DA90C2B002F945C /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62951DA90C2B002F945C /* ArticleDetailViewController.swift */; };
+		54AB62981DA90C58002F945C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62971DA90C58002F945C /* ArticleTableViewCell.swift */; };
+		54AB629A1DA90C6C002F945C /* ArticleTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AB62991DA90C6C002F945C /* ArticleTableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		54AB62651DA90457002F945C /* pipinosukeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pipinosukeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AB62691DA90457002F945C /* pipinosukeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pipinosukeUITests.swift; sourceTree = "<group>"; };
 		54AB626B1DA90457002F945C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AB62911DA90B31002F945C /* ArticleDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ArticleDetail.storyboard; sourceTree = "<group>"; };
+		54AB62931DA90C1E002F945C /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		54AB62951DA90C2B002F945C /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		54AB62971DA90C58002F945C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		54AB62991DA90C6C002F945C /* ArticleTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,13 @@
 		54AB62481DA90457002F945C /* pipinosuke */ = {
 			isa = PBXGroup;
 			children = (
+				54AB628D1DA90ADF002F945C /* Model */,
+				54AB628C1DA90AD4002F945C /* TableViewCell */,
+				54AB628B1DA90AA6002F945C /* ViewModel */,
+				54AB628A1DA90A9E002F945C /* ViewController */,
 				54AB62491DA90457002F945C /* AppDelegate.swift */,
 				54AB624B1DA90457002F945C /* ViewController.swift */,
+				54AB628E1DA90AE7002F945C /* Storyboards */,
 				54AB624D1DA90457002F945C /* Main.storyboard */,
 				54AB62501DA90457002F945C /* Assets.xcassets */,
 				54AB62521DA90457002F945C /* LaunchScreen.storyboard */,
@@ -123,6 +138,46 @@
 				54AB626B1DA90457002F945C /* Info.plist */,
 			);
 			path = pipinosukeUITests;
+			sourceTree = "<group>";
+		};
+		54AB628A1DA90A9E002F945C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54AB62931DA90C1E002F945C /* ArticleViewController.swift */,
+				54AB62951DA90C2B002F945C /* ArticleDetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		54AB628B1DA90AA6002F945C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		54AB628C1DA90AD4002F945C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				54AB62971DA90C58002F945C /* ArticleTableViewCell.swift */,
+				54AB62991DA90C6C002F945C /* ArticleTableView.xib */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		54AB628D1DA90ADF002F945C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		54AB628E1DA90AE7002F945C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				54AB62911DA90B31002F945C /* ArticleDetail.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AB629A1DA90C6C002F945C /* ArticleTableView.xib in Resources */,
 				54AB62541DA90457002F945C /* LaunchScreen.storyboard in Resources */,
 				54AB62511DA90457002F945C /* Assets.xcassets in Resources */,
+				54AB62921DA90B31002F945C /* ArticleDetail.storyboard in Resources */,
 				54AB624F1DA90457002F945C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AB62981DA90C58002F945C /* ArticleTableViewCell.swift in Sources */,
 				54AB624C1DA90457002F945C /* ViewController.swift in Sources */,
+				54AB62941DA90C1E002F945C /* ArticleViewController.swift in Sources */,
+				54AB62961DA90C2B002F945C /* ArticleDetailViewController.swift in Sources */,
 				54AB624A1DA90457002F945C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +544,7 @@
 				54AB62701DA90457002F945C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54AB62711DA90457002F945C /* Build configuration list for PBXNativeTarget "pipinosukeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +553,7 @@
 				54AB62731DA90457002F945C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54AB62741DA90457002F945C /* Build configuration list for PBXNativeTarget "pipinosukeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +562,7 @@
 				54AB62761DA90457002F945C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

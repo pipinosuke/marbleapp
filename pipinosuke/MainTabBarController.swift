@@ -21,12 +21,10 @@ class MainTabBarController: UITabBarController {
         let articleViewController = articleStoryboard.instantiateInitialViewController() as! ArticleContainerViewController
         let searchStoryboard = UIStoryboard(name: "Search", bundle: nil)
         let searchViewController = searchStoryboard.instantiateInitialViewController() as! SearchContainerViewController
-        let viewControllers = [articleViewController,searchViewController]
+        let likeStoryboard = UIStoryboard(name: "Like", bundle: nil)
+        let likeViewController = likeStoryboard.instantiateInitialViewController() as! LikeContainerViewController
+        let viewControllers = [articleViewController,searchViewController,likeViewController]
         self.setViewControllers(viewControllers, animated: false)
-        
-        
-
-        
         super.viewDidLoad()
         
         

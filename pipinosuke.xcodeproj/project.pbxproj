@@ -40,6 +40,9 @@
 		54AB62961DA90C2B002F945C /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62951DA90C2B002F945C /* ArticleDetailViewController.swift */; };
 		54AB62981DA90C58002F945C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62971DA90C58002F945C /* ArticleTableViewCell.swift */; };
 		54AB629A1DA90C6C002F945C /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AB62991DA90C6C002F945C /* ArticleTableViewCell.xib */; };
+		54E444A11DA9588100AF3F81 /* Like.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E444A01DA9588100AF3F81 /* Like.storyboard */; };
+		54E444A31DA958AA00AF3F81 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E444A21DA958AA00AF3F81 /* LikeViewController.swift */; };
+		54E444A51DA958CD00AF3F81 /* LikeContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E444A41DA958CD00AF3F81 /* LikeContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		54AB62951DA90C2B002F945C /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		54AB62971DA90C58002F945C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		54AB62991DA90C6C002F945C /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		54E444A01DA9588100AF3F81 /* Like.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Like.storyboard; sourceTree = "<group>"; };
+		54E444A21DA958AA00AF3F81 /* LikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		54E444A41DA958CD00AF3F81 /* LikeContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 				5472B9641DA9489200F2E606 /* ArticleContainerViewController.swift */,
 				5472B9681DA9492C00F2E606 /* MainTabBarController.swift */,
 				5472B9701DA9500300F2E606 /* SearchContainerViewController.swift */,
+				54E444A41DA958CD00AF3F81 /* LikeContainerViewController.swift */,
 			);
 			name = ContainerViewController;
 			sourceTree = "<group>";
@@ -234,6 +241,7 @@
 				54AB62931DA90C1E002F945C /* ArticleViewController.swift */,
 				54AB62951DA90C2B002F945C /* ArticleDetailViewController.swift */,
 				5472B96C1DA94F7B00F2E606 /* SearchViewController.swift */,
+				54E444A21DA958AA00AF3F81 /* LikeViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 				54AB62911DA90B31002F945C /* ArticleDetail.storyboard */,
 				5472B95F1DA947A900F2E606 /* Article.storyboard */,
 				5472B96A1DA94EC500F2E606 /* Search.storyboard */,
+				54E444A01DA9588100AF3F81 /* Like.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -382,6 +391,7 @@
 				54AB629A1DA90C6C002F945C /* ArticleTableViewCell.xib in Resources */,
 				5472B9601DA947A900F2E606 /* Article.storyboard in Resources */,
 				54AB62541DA90457002F945C /* LaunchScreen.storyboard in Resources */,
+				54E444A11DA9588100AF3F81 /* Like.storyboard in Resources */,
 				54AB62511DA90457002F945C /* Assets.xcassets in Resources */,
 				54AB62921DA90B31002F945C /* ArticleDetail.storyboard in Resources */,
 				54AB624F1DA90457002F945C /* Main.storyboard in Resources */,
@@ -444,12 +454,14 @@
 				5472B9531DA93AA000F2E606 /* StoryboardLoadable.swift in Sources */,
 				54AB624A1DA90457002F945C /* AppDelegate.swift in Sources */,
 				5472B96D1DA94F7B00F2E606 /* SearchViewController.swift in Sources */,
+				54E444A31DA958AA00AF3F81 /* LikeViewController.swift in Sources */,
 				5472B9461DA9219300F2E606 /* APIManager.swift in Sources */,
 				5472B9501DA9224F00F2E606 /* ArticleViewModel.swift in Sources */,
 				5472B9481DA921C900F2E606 /* Utils.swift in Sources */,
 				5472B9711DA9500300F2E606 /* SearchContainerViewController.swift in Sources */,
 				5472B9651DA9489200F2E606 /* ArticleContainerViewController.swift in Sources */,
 				5472B94E1DA9221700F2E606 /* User.swift in Sources */,
+				54E444A51DA958CD00AF3F81 /* LikeContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

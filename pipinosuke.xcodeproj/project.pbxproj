@@ -22,6 +22,9 @@
 		5472B94E1DA9221700F2E606 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B94D1DA9221700F2E606 /* User.swift */; };
 		5472B9501DA9224F00F2E606 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B94F1DA9224F00F2E606 /* ArticleViewModel.swift */; };
 		5472B9531DA93AA000F2E606 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B9521DA93AA000F2E606 /* StoryboardLoadable.swift */; };
+		5472B9601DA947A900F2E606 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5472B95F1DA947A900F2E606 /* Article.storyboard */; };
+		5472B9651DA9489200F2E606 /* ArticleContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B9641DA9489200F2E606 /* ArticleContainerViewController.swift */; };
+		5472B9691DA9492C00F2E606 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B9681DA9492C00F2E606 /* MainTabBarController.swift */; };
 		54AB624A1DA90457002F945C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62491DA90457002F945C /* AppDelegate.swift */; };
 		54AB624C1DA90457002F945C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB624B1DA90457002F945C /* ViewController.swift */; };
 		54AB624F1DA90457002F945C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AB624D1DA90457002F945C /* Main.storyboard */; };
@@ -69,6 +72,9 @@
 		5472B94D1DA9221700F2E606 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5472B94F1DA9224F00F2E606 /* ArticleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		5472B9521DA93AA000F2E606 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		5472B95F1DA947A900F2E606 /* Article.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
+		5472B9641DA9489200F2E606 /* ArticleContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleContainerViewController.swift; sourceTree = "<group>"; };
+		5472B9681DA9492C00F2E606 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		54AB62461DA90457002F945C /* pipinosuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pipinosuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AB62491DA90457002F945C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AB624B1DA90457002F945C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +146,15 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		5472B9611DA9482C00F2E606 /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5472B9641DA9489200F2E606 /* ArticleContainerViewController.swift */,
+				5472B9681DA9492C00F2E606 /* MainTabBarController.swift */,
+			);
+			name = ContainerViewController;
+			sourceTree = "<group>";
+		};
 		54AB623D1DA90457002F945C = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +185,7 @@
 		54AB62481DA90457002F945C /* pipinosuke */ = {
 			isa = PBXGroup;
 			children = (
+				5472B9611DA9482C00F2E606 /* ContainerViewController */,
 				5472B9511DA93A8100F2E606 /* Protocols */,
 				5472B9421DA9214100F2E606 /* Utils */,
 				54AB628D1DA90ADF002F945C /* Model */,
@@ -244,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				54AB62911DA90B31002F945C /* ArticleDetail.storyboard */,
+				5472B95F1DA947A900F2E606 /* Article.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -354,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54AB629A1DA90C6C002F945C /* ArticleTableViewCell.xib in Resources */,
+				5472B9601DA947A900F2E606 /* Article.storyboard in Resources */,
 				54AB62541DA90457002F945C /* LaunchScreen.storyboard in Resources */,
 				54AB62511DA90457002F945C /* Assets.xcassets in Resources */,
 				54AB62921DA90B31002F945C /* ArticleDetail.storyboard in Resources */,
@@ -407,6 +425,7 @@
 			files = (
 				54AB62981DA90C58002F945C /* ArticleTableViewCell.swift in Sources */,
 				54AB624C1DA90457002F945C /* ViewController.swift in Sources */,
+				5472B9691DA9492C00F2E606 /* MainTabBarController.swift in Sources */,
 				5472B9441DA9215F00F2E606 /* APIUrl.swift in Sources */,
 				54AB62941DA90C1E002F945C /* ArticleViewController.swift in Sources */,
 				5472B94C1DA9220600F2E606 /* Article.swift in Sources */,
@@ -417,6 +436,7 @@
 				5472B9461DA9219300F2E606 /* APIManager.swift in Sources */,
 				5472B9501DA9224F00F2E606 /* ArticleViewModel.swift in Sources */,
 				5472B9481DA921C900F2E606 /* Utils.swift in Sources */,
+				5472B9651DA9489200F2E606 /* ArticleContainerViewController.swift in Sources */,
 				5472B94E1DA9221700F2E606 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

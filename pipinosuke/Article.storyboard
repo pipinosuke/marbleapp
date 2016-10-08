@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="204-Jw-m0J">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="Y7J-Ma-6NP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="204-Jw-m0J" customClass="ArticleContainerViewController" customModule="pipinosuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="tab_home-1" id="gzd-7K-eKv"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lkF-qc-rWp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JNv-J1-V4L" kind="relationship" relationship="rootViewController" id="QDA-RO-2Dn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMd-Fo-ljg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="-364"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="CzO-1T-iQF">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="JNv-J1-V4L" customClass="ArticleViewController" customModule="pipinosuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6f0-Og-wIj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tHi-B0-pFH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pa0-9A-SMh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tUj-LK-xCt">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="cTp-hq-h1m" customClass="ArticleTableViewCell" customModule="pipinosuke" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cTp-hq-h1m" id="XEz-Cc-2GJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JNv-J1-V4L" id="rfe-77-UeX"/>
+                                    <outlet property="delegate" destination="JNv-J1-V4L" id="63b-7y-tBX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tUj-LK-xCt" firstAttribute="leading" secondItem="pa0-9A-SMh" secondAttribute="leading" id="2rA-aC-zdj"/>
+                            <constraint firstAttribute="trailing" secondItem="tUj-LK-xCt" secondAttribute="trailing" id="9po-uD-kBX"/>
+                            <constraint firstItem="tHi-B0-pFH" firstAttribute="top" secondItem="tUj-LK-xCt" secondAttribute="bottom" id="dcc-ER-lxB"/>
+                            <constraint firstItem="tUj-LK-xCt" firstAttribute="top" secondItem="6f0-Og-wIj" secondAttribute="bottom" id="tgR-Zq-xlg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nhj-lN-R2J"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="tUj-LK-xCt" id="wPf-O4-EKs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvu-pv-UdJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_home-1" width="32" height="32"/>
+    </resources>
+</document>

@@ -71,6 +71,13 @@ extension ArticleViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - UITableViewDataSource
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let next: ArticleDetailViewController = Utils.createViewController()
+        next.article = articles![indexPath.row]
+        navigationController?.pushViewController(next, animated: true)
+        
+    }
+    
     // return the number of tableViewCells
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles?.count ?? 0
@@ -82,3 +89,6 @@ extension ArticleViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 }
+
+// MARK - StoryboardLoadable
+extension UIViewController: StoryboardLoadable {}

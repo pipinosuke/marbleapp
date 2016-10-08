@@ -7,14 +7,27 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class ArticleDetailViewController: UIViewController {
+    
+    let apiManager: APIManager = APIManager.sharedInstance
+    var article: Article?
+    
 
+    @IBOutlet weak var text: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let article = article{
+            text.text = article.body
+            text.editable = false
+        }
 
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

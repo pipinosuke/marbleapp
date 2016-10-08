@@ -25,6 +25,9 @@
 		5472B9601DA947A900F2E606 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5472B95F1DA947A900F2E606 /* Article.storyboard */; };
 		5472B9651DA9489200F2E606 /* ArticleContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B9641DA9489200F2E606 /* ArticleContainerViewController.swift */; };
 		5472B9691DA9492C00F2E606 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B9681DA9492C00F2E606 /* MainTabBarController.swift */; };
+		5472B96B1DA94EC500F2E606 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5472B96A1DA94EC500F2E606 /* Search.storyboard */; };
+		5472B96D1DA94F7B00F2E606 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B96C1DA94F7B00F2E606 /* SearchViewController.swift */; };
+		5472B9711DA9500300F2E606 /* SearchContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5472B9701DA9500300F2E606 /* SearchContainerViewController.swift */; };
 		54AB624A1DA90457002F945C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB62491DA90457002F945C /* AppDelegate.swift */; };
 		54AB624C1DA90457002F945C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB624B1DA90457002F945C /* ViewController.swift */; };
 		54AB624F1DA90457002F945C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54AB624D1DA90457002F945C /* Main.storyboard */; };
@@ -75,6 +78,9 @@
 		5472B95F1DA947A900F2E606 /* Article.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 		5472B9641DA9489200F2E606 /* ArticleContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleContainerViewController.swift; sourceTree = "<group>"; };
 		5472B9681DA9492C00F2E606 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5472B96A1DA94EC500F2E606 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		5472B96C1DA94F7B00F2E606 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5472B9701DA9500300F2E606 /* SearchContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContainerViewController.swift; sourceTree = "<group>"; };
 		54AB62461DA90457002F945C /* pipinosuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pipinosuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AB62491DA90457002F945C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54AB624B1DA90457002F945C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 			children = (
 				5472B9641DA9489200F2E606 /* ArticleContainerViewController.swift */,
 				5472B9681DA9492C00F2E606 /* MainTabBarController.swift */,
+				5472B9701DA9500300F2E606 /* SearchContainerViewController.swift */,
 			);
 			name = ContainerViewController;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 			children = (
 				54AB62931DA90C1E002F945C /* ArticleViewController.swift */,
 				54AB62951DA90C2B002F945C /* ArticleDetailViewController.swift */,
+				5472B96C1DA94F7B00F2E606 /* SearchViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 			children = (
 				54AB62911DA90B31002F945C /* ArticleDetail.storyboard */,
 				5472B95F1DA947A900F2E606 /* Article.storyboard */,
+				5472B96A1DA94EC500F2E606 /* Search.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -376,6 +385,7 @@
 				54AB62511DA90457002F945C /* Assets.xcassets in Resources */,
 				54AB62921DA90B31002F945C /* ArticleDetail.storyboard in Resources */,
 				54AB624F1DA90457002F945C /* Main.storyboard in Resources */,
+				5472B96B1DA94EC500F2E606 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,9 +443,11 @@
 				54AB62961DA90C2B002F945C /* ArticleDetailViewController.swift in Sources */,
 				5472B9531DA93AA000F2E606 /* StoryboardLoadable.swift in Sources */,
 				54AB624A1DA90457002F945C /* AppDelegate.swift in Sources */,
+				5472B96D1DA94F7B00F2E606 /* SearchViewController.swift in Sources */,
 				5472B9461DA9219300F2E606 /* APIManager.swift in Sources */,
 				5472B9501DA9224F00F2E606 /* ArticleViewModel.swift in Sources */,
 				5472B9481DA921C900F2E606 /* Utils.swift in Sources */,
+				5472B9711DA9500300F2E606 /* SearchContainerViewController.swift in Sources */,
 				5472B9651DA9489200F2E606 /* ArticleContainerViewController.swift in Sources */,
 				5472B94E1DA9221700F2E606 /* User.swift in Sources */,
 			);

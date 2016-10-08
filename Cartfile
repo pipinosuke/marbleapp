@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire"==3.4.1
+github "SwiftyJSON/SwiftyJSON"==2.3.3
+github "rs/SDWebImage"==3.8.1
+github "realm/realm-cocoa"==1.0.2
+github "Thomvis/BrightFutures"==4.1.1

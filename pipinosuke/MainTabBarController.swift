@@ -19,9 +19,18 @@ class MainTabBarController: UITabBarController {
         
         let articleStoryboard = UIStoryboard(name: "Article", bundle: nil)
         let articleViewController = articleStoryboard.instantiateInitialViewController() as! ArticleContainerViewController
-        let viewControllers = [articleViewController]
+        let searchStoryboard = UIStoryboard(name: "Search", bundle: nil)
+        let searchViewController = searchStoryboard.instantiateInitialViewController() as! SearchContainerViewController
+        let viewControllers = [articleViewController,searchViewController]
         self.setViewControllers(viewControllers, animated: false)
+        
+        
+
+        
         super.viewDidLoad()
+        
+        
+        
         
     }
 

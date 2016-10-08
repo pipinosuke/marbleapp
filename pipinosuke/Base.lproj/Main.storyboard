@@ -31,8 +31,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ty7-sO-6vV"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="90O-kr-JAj"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="07R-aS-Yld"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LtA-vx-pQe"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -46,7 +46,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FWw-jb-b3U"/>
                     <connections>
-                        <outlet property="tableView" destination="55g-zt-5GA" id="ArL-Qd-3dz"/>
+                        <outlet property="tableView" destination="55g-zt-5GA" id="Rf7-S7-biT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

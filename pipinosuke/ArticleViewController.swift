@@ -10,9 +10,8 @@
 import UIKit
 
 class ArticleViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerNib(UINib(nibName: "ArticleTableViewCell", bundle: nil), forCellReuseIdentifier: "ArticleTableViewCell")
         tableView.rowHeight = 96.0

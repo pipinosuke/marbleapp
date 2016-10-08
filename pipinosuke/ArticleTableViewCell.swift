@@ -20,18 +20,24 @@ class ArticleTableViewCell: UITableViewCell {
         // Initialization code
         // これがないとXibファイルが生成されません.
     }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: ArticleTableViewCell = tableView.dequeueReusableCellWithIdentifier("ArticleTableViewCell") as! ArticleTableViewCell
+        return cell
+    }
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
     
+
+    
     func bindDataCell() {
         // 引数にArticleオブジェクトを受け取って、cellの作成を行います.
         // 現状まだ引数をいれずに適当な値を入れています.
-        self.title.text = "test"
+        title.text = "test"
         self.date.text = "date"
-        self.desc.text = "記事の説明です"
+        self.desc.text = "siojsaioj"
         self.user.text = "user'"
         if let thumbnail: String = "https://i.vimeocdn.com/portrait/58832_300x300" {
             if let data = NSData(contentsOfURL: NSURL(string: thumbnail)!) {
@@ -39,4 +45,6 @@ class ArticleTableViewCell: UITableViewCell {
             }
         }
     }
+    
+
 }

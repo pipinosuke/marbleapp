@@ -46,6 +46,9 @@
 		54E444A71DA95A6200AF3F81 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E444A61DA95A6200AF3F81 /* Mypage.storyboard */; };
 		54E444A91DA95A9500AF3F81 /* MypageContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E444A81DA95A9500AF3F81 /* MypageContainerViewController.swift */; };
 		54E444AB1DA95AAD00AF3F81 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E444AA1DA95AAD00AF3F81 /* MypageViewController.swift */; };
+		54E4B98D1DAB6C2A007220BC /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4B98C1DAB6C2A007220BC /* Extentions.swift */; };
+		54E4B98F1DAB6F9D007220BC /* LikesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4B98E1DAB6F9D007220BC /* LikesUtils.swift */; };
+		54E4B9911DAB6FD0007220BC /* Likes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4B9901DAB6FD0007220BC /* Likes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		54E444A61DA95A6200AF3F81 /* Mypage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
 		54E444A81DA95A9500AF3F81 /* MypageContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageContainerViewController.swift; sourceTree = "<group>"; };
 		54E444AA1DA95AAD00AF3F81 /* MypageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		54E4B98C1DAB6C2A007220BC /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		54E4B98E1DAB6F9D007220BC /* LikesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesUtils.swift; sourceTree = "<group>"; };
+		54E4B9901DAB6FD0007220BC /* Likes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Likes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,8 @@
 				5472B9451DA9219300F2E606 /* APIManager.swift */,
 				5472B9471DA921C900F2E606 /* Utils.swift */,
 				5472B9491DA921DF00F2E606 /* DateUtils.swift */,
+				54E4B98C1DAB6C2A007220BC /* Extentions.swift */,
+				54E4B98E1DAB6F9D007220BC /* LikesUtils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -276,6 +284,7 @@
 			children = (
 				5472B94B1DA9220600F2E606 /* Article.swift */,
 				5472B94D1DA9221700F2E606 /* User.swift */,
+				54E4B9901DAB6FD0007220BC /* Likes.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -466,13 +475,16 @@
 				54AB624A1DA90457002F945C /* AppDelegate.swift in Sources */,
 				5472B96D1DA94F7B00F2E606 /* SearchViewController.swift in Sources */,
 				54E444A31DA958AA00AF3F81 /* LikeViewController.swift in Sources */,
+				54E4B98F1DAB6F9D007220BC /* LikesUtils.swift in Sources */,
 				5472B9461DA9219300F2E606 /* APIManager.swift in Sources */,
+				54E4B98D1DAB6C2A007220BC /* Extentions.swift in Sources */,
 				5472B9501DA9224F00F2E606 /* ArticleViewModel.swift in Sources */,
 				5472B9481DA921C900F2E606 /* Utils.swift in Sources */,
 				54E444A91DA95A9500AF3F81 /* MypageContainerViewController.swift in Sources */,
 				5472B9711DA9500300F2E606 /* SearchContainerViewController.swift in Sources */,
 				5472B9651DA9489200F2E606 /* ArticleContainerViewController.swift in Sources */,
 				5472B94E1DA9221700F2E606 /* User.swift in Sources */,
+				54E4B9911DAB6FD0007220BC /* Likes.swift in Sources */,
 				54E444A51DA958CD00AF3F81 /* LikeContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

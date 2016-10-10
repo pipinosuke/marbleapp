@@ -18,32 +18,25 @@ class ArticleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        // これがないとXibファイルが生成されません.
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: ArticleTableViewCell = tableView.dequeueReusableCellWithIdentifier("ArticleTableViewCell") as! ArticleTableViewCell
-        return cell
-    }
+    
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
         // Configure the view for the selected state
     }
     
-
-    
-    func bindDataCell(article: Article) {
-        // 引数にArticleオブジェクトを受け取って、cellの作成を行います.
+    func setCell(article: Article){
         self.title.text = article.title
         self.date.text = String(article.modified)
-        self.desc.text = article.body
         self.user.text = article.userData.userName
-        if let thumbnail: String = article.thumb {
-            if let data = NSData(contentsOfURL: NSURL(string: thumbnail)!) {
+        self.desc.text = article.body
+        if let thumbnailUrl: String = article.thumb {
+            if let data = NSData(contentsOfURL: NSURL(string: thumbnailUrl)!) {
                 self.thumbnail.image = UIImage(data: data)
             }
         }
     }
     
-
 }

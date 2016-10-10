@@ -67,7 +67,7 @@
                     <navigationItem key="navigationItem" id="Nhj-lN-R2J"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="tUj-LK-xCt" id="wPf-O4-EKs"/>
+                        <outlet property="tableView" destination="tUj-LK-xCt" id="7cG-4C-iql"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvu-pv-UdJ" sceneMemberID="firstResponder"/>

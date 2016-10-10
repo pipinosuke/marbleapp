@@ -2,7 +2,11 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-struct Article {
+protocol JSONSerializable {
+    func toJson() -> JSON
+}
+
+struct Article: JSONSerializable {
     
     let id: Int
     let title: String
@@ -41,6 +45,33 @@ struct Article {
         userData = User(json: json["User"])
     }
     
+    func toJson() -> JSON {
+        let dict: [String: AnyObject] = [
+            "Article": [
+                "id": self.id,
+                "title": self.title,
+                "body": self.body,
+                "category_id": self.categoryId,
+                "category_name": self.categoryName,
+                "item_order": self.itemOrder,
+                "modified": self.modified,
+                "one_page": self.onePage,
+                "provider": self.provider,
+                "published": self.published,
+                "thumb": String(self.thumb),
+                "thumb_normal": String(self.thumbNormal),
+                "thumb_original": String(self.thumbOriginal),
+                "thumb_status": self.thumbStatus,
+                "thumb_updated": String(self.thumbUpdated),
+            ],
+            "User": [
+                "id": self.userData.id,
+                "username": self.userData.userName,
+                "screenname": self.userData.screenName
+            ]
+        ]
+        return JSON(dict)
+    }
 }
 
 struct ArticleSerializer: ResponseSerializerType {

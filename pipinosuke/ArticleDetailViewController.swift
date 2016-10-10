@@ -18,6 +18,24 @@ class ArticleDetailViewController: UIViewController {
 
 
     @IBOutlet weak var text: UITextView!
+    
+    
+    @IBAction func like(sender: UIButton) {
+        
+        let like = !LikesUtils.isLike(Int32(article!.id))
+        if like {
+            // when the article's not liked yet.
+            LikesUtils.like(Int32(article!.id), data: article!.toJson())
+            print("Like: \(article!.id)")
+        } else {
+            // when the article's liked already.
+            LikesUtils.unlike(Int32(article!.id))
+            print("Unlike: \(article!.id)")
+        }
+    }
+    
+        
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         if let article = article{
@@ -29,23 +47,7 @@ class ArticleDetailViewController: UIViewController {
     }
     
 
-    @IBAction func buttonTapped(sender: UIButton) {
-        let alertController = UIAlertController(
-            title:"Liked!!",
-            message: "",
-            preferredStyle:UIAlertControllerStyle.Alert)
-        
-        alertController.addAction(
-            UIAlertAction(
-                title:"OK",
-                style:UIAlertActionStyle.Default,
-                handler:nil))
-        
-        presentViewController(
-            alertController,
-            animated:true,
-            completion:nil)
-    }
+
 
     
 

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Like View Controller-->
@@ -17,16 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLH-e6-iP5">
-                                <rect key="frame" x="224" y="271" width="31" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k1P-98-cN3">
+                                <rect key="frame" x="20" y="64" width="560" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="H5H-q4-hlE" customClass="ArticleTableViewCell" customModule="pipinosuke" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H5H-q4-hlE" id="Olq-Vu-QfB">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7nM-bZ-W3k" id="bfz-lb-khu"/>
+                                    <outlet property="delegate" destination="7nM-bZ-W3k" id="2X3-mJ-Kbs"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="k1P-98-cN3" secondAttribute="trailing" id="DLY-w9-CB0"/>
+                            <constraint firstItem="jmM-9v-GZd" firstAttribute="top" secondItem="k1P-98-cN3" secondAttribute="bottom" id="eAC-HX-KKp"/>
+                            <constraint firstItem="k1P-98-cN3" firstAttribute="leading" secondItem="4NJ-eb-bgt" secondAttribute="leadingMargin" id="m4p-Qi-weN"/>
+                            <constraint firstItem="k1P-98-cN3" firstAttribute="top" secondItem="1I5-nB-udk" secondAttribute="bottom" id="mKX-cG-bET"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aMX-me-mxO"/>
+                    <connections>
+                        <outlet property="tableView" destination="k1P-98-cN3" id="K0h-xN-sz9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uOX-Or-lgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

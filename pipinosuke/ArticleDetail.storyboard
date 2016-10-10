@@ -31,7 +31,7 @@
                                 <rect key="frame" x="277" y="401" width="30" height="30"/>
                                 <state key="normal" title="Like"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="Quc-No-X2w" eventType="touchUpInside" id="6Lw-I8-Zg5"/>
+                                    <action selector="like:" destination="Quc-No-X2w" eventType="touchUpInside" id="7lr-B3-Cwh"/>
                                 </connections>
                             </button>
                         </subviews>
